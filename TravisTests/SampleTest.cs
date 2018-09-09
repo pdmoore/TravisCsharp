@@ -1,11 +1,12 @@
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+
+using NUnit.Framework;
 
 namespace TravisTests {
     
-    [TestClass]
+    [TestFixture]
     public class SampleTest {
         
-        [TestMethod]
+        [Test]
         public void ExampleTest() {
 //            Assert.IsTrue(true);
             Assert.Fail("force failure to see CI fail");
