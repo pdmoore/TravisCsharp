@@ -3,9 +3,6 @@ solution: Travis.sln
 sudo: required
 dist: trusty
 mono: none
-install:
-    - nuget restore Travis.sln
-    - nuget install NUnit.ConsoleRunner -Version 3.9.0 -OutputDirectory testrunner
 script:
     - ./build.sh
 
