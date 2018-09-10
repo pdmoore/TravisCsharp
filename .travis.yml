@@ -6,7 +6,6 @@ mono: none
 dotnet: 2.0.0
 script:
     - dotnet restore
-//    - dotnet test 
-    - dotnet vstest ((ls -Recurse *Tests.dll | % FullName) -Match "\\bin\\Release\\")
+    - dotnet test TravisTests/TravisTests.csproj
     - dotnet publish -c release
 
